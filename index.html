@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <title>Quest HTML + CSS + JS intermediário</title>
+</head>
+<body>
+    <main class="main">
+        <div class="texto-principal">
+            <h1>
+                FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+
+        </div>
+        <div class="formulario">
+            <form class="form" action="index.html" method="get">
+                <input class="inputs" type="text" name="nome" id="nome" placeholder="Nome completo *">
+                <p class="mensagem-erro esconder">campo obrigatório</p>
+
+                <input class="inputs" type="text" name="email" id="email" placeholder="Email *">
+                <p class="mensagem-erro esconder">campo obrigatório</p>
+
+                <input class="inputs" type="text" name="telefone" id="telefone" placeholder="telefone *">
+                <p class="mensagem-erro esconder">campo obrigatório</p>
+
+                <textarea class="textarea inputs" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                <p class="mensagem-erro esconder">campo obrigatório</p>
+
+                <p class="mensagem">*campos obrigatórios</p>
+                
+                <button class="botao" type="submit" value="Enviar">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
