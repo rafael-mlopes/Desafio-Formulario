@@ -5,25 +5,22 @@ const mensagemErro = document.querySelectorAll(".mensagem-erro")
 
 
 botao.addEventListener('click', () =>{
-    inputs.forEach((input) =>{
+    
+    inputs.forEach((input, index) =>{
         valorInput = input.value;
-    })
-
-    if (valorInput === "") {
-        errado()
-        inputs.forEach((input) =>{
+        if (valorInput === "") {
+            mensagemErro[index].classList.remove("esconder");
             input.classList.remove("borda-normal")
             input.classList.remove("correto")
             input.classList.add("errado")
-        })
-    } else {
-        correto()
-        inputs.forEach((input) =>{
+        } else {
+            mensagemErro[index].classList.add("esconder");
             input.classList.remove("borda-normal")
             input.classList.remove("errado")
             input.classList.add("correto")
-        })
-    }
+        }
+    })
+    
 })
 
 function errado() {
@@ -33,8 +30,8 @@ function errado() {
 }
 
 function correto() {
-    mensagemErro.forEach((erro) =>{
-        erro.classList.add("esconder")
+    mensagemErro.forEach((correto) =>{
+        correto.classList.add("esconder")
     })
 }
 
