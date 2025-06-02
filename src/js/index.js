@@ -23,17 +23,6 @@ botao.addEventListener('click', () =>{
     
 })
 
-function errado() {
-    mensagemErro.forEach((erro) =>{
-        erro.classList.remove("esconder")
-    })
-}
-
-function correto() {
-    mensagemErro.forEach((correto) =>{
-        correto.classList.add("esconder")
-    })
-}
 
 
 
